@@ -1,31 +1,118 @@
+body{
+  margin :0;
+
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.shipping {
+  /*background: #88a693;*/
+  background: #f0c5a5;
+  color : #1C442D;
+  width: 100%;
+  height: 30px;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.head{
+  background: #eee;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url("./image/leaf1.png");
+  background-repeat: repeat;
+  background-size: 400px;
+  background-position: left;
+  background-attachment: fixed;
+  
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.column {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.tete{
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color : #1C442D;
+  margin-top: 10px;
 }
 
+.soutitre{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color : #1C442D;
+  margin-top: 20px;
+}
+.about{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color : #1C442D;
+  margin-top: 2px;
+  width : 60%;
+}
+
+.tealealogo{
+  margin: 20px auto;
+  width :120px;
+ /* color: #1C442D;*/
+  color: #1A1C20;
+  animation: logo-scale infinite 5s linear;
+  animation-direction: alternate-reverse;
+}
+
+.tealealogo:hover{
+  /*color : #424242;*/
+  color : #000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.link {
+  padding: 10px 20px 5px 20px;
+  text-decoration: none;
+  color: #424242;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+.link:hover{
+  animation: move  0.3s linear;
+  animation-direction: alternate-reverse;
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .tealealogo {
+    animation: logo-scale infinite 5s linear;
+    animation-direction: alternate-reverse;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -34,5 +121,338 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-scale {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1px);
+  }
+}
+.back {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #424242;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+.change {
+  color: white;
+  padding: 10px;
+  border: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 0.3px;
+}
+.vert{
+  background: #1c442d;
+}
+.noir{
+  background: #2C3333;
+}
+.noel{
+  background: #8B5E83;
+}
+.rouge{
+  background: #ad424c;
+}
+.detox{
+  background: #3FA796;
+}
+.blanc{
+  background: #d89027;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.product-card {
+  padding: 5px;
+ /* flex-grow: 1;
+  flex-basis: 10%;*/
+  text-align: center;
+}
+.frameimg {
+  overflow: hidden;
+  height: 220px;
+  width: 220px;
+}
+.frameimg360 {
+  overflow: hidden;
+  height: 360px;
+  width: 360px;
+}
+.phototea {
+  height: 220px;
+  width: 220px;
+}
+
+.phototea360 {
+  height: 360px;
+  width: 360px;
+
+}
+.phototea:hover, .phototea360:hover{
+    animation: tea-scale infinite 4s linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes tea-scale {
+  from {
+    transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2); 
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+  }
+  to {
+    transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    -moz-transform:scale(1.0); 
+    -webkit-transform:scale(1.0);
+    -o-transform:scale(1.0);
+  }
+}
+
+.teaname {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #424242;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  color: #1C442D;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.span-tea{
+  font-weight: 500;
+  color: #ad424c;
+}
+.ingredients {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: #424242;
+  font-weight: 300;
+  width: 200px;
+  margin: 3px auto;
+}
+.btnMore {
+  background: transparent;
+  border: none;
+  color: #ad424c;
+}
+.btn {
+  display: flex;
+  padding: 10px 0 0 0;
+}
+.footer{
+  background: #88a693;
+  padding: 20px;
+}
+.footfoot {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.lena{
+  color: #1C442D;;
+}
+.footerhead{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.footerlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 20px;
+  border-left: 1px solid white;
+}
+
+
+.footerlink {
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.green {
+  color: #1C442D;
+  font-size: 20px;
+  font-weight: 300;
+
+}
+.footerinput{
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.footerinput::placeholder{
+  color: #fff;
+  font-size: 14px;
+  
+}
+.footerBtn{
+  background: transparent;
+  border: none;
+  color : #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.inputplace {
+  
+  display: flex;
+  align-items: flex-start;
+  
+}
+.footerlinks i {
+  animation-name: blink;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+  font-size: 20px;
+}
+.footerlinks input:focus + i {
+	display: none;
+}
+.bottomline{
+  border-bottom: 1px solid white;
+}
+.btnSend{
+  background: #1C442D;
+  border: 2px solid #1C442D;
+  color : #fff;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btnSend:hover {
+  background: transparent;
+  border: 2px solid #1C442D;
+  color : #1C442D;
+}
+
+.inputcontact {
+padding: 10px;
+margin: 10px;
+}
+
+
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+
+
+@media all and (max-width : 1030px) {
+  
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  
+  
+}
+
+@media all and (max-width : 1000px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .soutitre, .about {
+    width: 80%;
+  }
+  .footerhead{
+    flex-direction: column;
+  }
+  .footerlinks{
+    border-left: none;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+  }
+
+}
+
+@media all and (max-width : 500px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .soutitre, .about {
+    width: 80%;
+  }
+}
+@media all and (max-width : 360px) {
+  .column {
+    flex-direction: column;
+  }
+  .products {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .frameimg360, .phototea360{
+    width: 100%;
+  }
+  .soutitre, .about {
+    width: 80%;
   }
 }
