@@ -327,7 +327,7 @@ nav {
 .footerinput::placeholder{
   color: #fff;
   font-size: 14px;
-  
+  font-family: 'Ubuntu', sans-serif;
 }
 .footerBtn{
   background: transparent;
