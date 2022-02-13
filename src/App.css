@@ -354,6 +354,10 @@ font-style: normal;
 .footerlinks input:focus + i {
 	display: none;
 }
+.line{
+  display: flex;
+  flex-direction: row;
+}
 .bottomline{
   border-bottom: 1px solid white;
 }
