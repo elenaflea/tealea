@@ -343,11 +343,13 @@ nav {
   
 }
 .footerlinks i {
-  animation-name: blink;
-	animation-duration: 1000ms;
-	animation-iteration-count: infinite;
-	opacity: 1;
-  font-size: 20px;
+animation-name: blink;
+animation-duration: 1000ms;
+animation-iteration-count: infinite;
+opacity: 1;
+font-size: 20px;
+font-family: 'Ubuntu', sans-serif;
+font-style: normal;
 }
 .footerlinks input:focus + i {
 	display: none;
