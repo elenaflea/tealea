@@ -299,7 +299,7 @@ function App() {
 
     </div >
       <p className="footfoot App" >© 2022 Tealea INC </p>
-      <a className="footfoot App" href="https://grondin.glitch.me/" target="_blank" rel="noreferrer">Designed and Developed by Elena GRONDIN</a>
+      <a className="footfoot App" href="https://lunacode.fr/" target="_blank" rel="noreferrer">Designed and Developed by Elena GRONDIN</a>
       </div>
     </Router>
     
